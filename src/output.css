@@ -621,6 +621,18 @@ video {
   top: 100%;
 }
 
+.top-0 {
+  top: 0px;
+}
+
+.z-40 {
+  z-index: 40;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
 .col-span-12 {
   grid-column: span 12 / span 12;
 }
@@ -642,6 +654,10 @@ video {
   margin-top: 40px;
 }
 
+.mt-\[20px\] {
+  margin-top: 20px;
+}
+
 .flex {
   display: flex;
 }
@@ -654,24 +670,20 @@ video {
   display: none;
 }
 
+.h-full {
+  height: 100%;
+}
+
 .max-h-\[300px\] {
   max-height: 300px;
 }
 
-.max-h-\[400px\] {
-  max-height: 400px;
-}
-
-.max-h-\[600px\] {
-  max-height: 600px;
-}
-
-.max-h-\[500px\] {
-  max-height: 500px;
-}
-
 .min-h-\[500px\] {
   min-height: 500px;
+}
+
+.min-h-\[300px\] {
+  min-height: 300px;
 }
 
 .w-full {
@@ -714,9 +726,34 @@ video {
   gap: 30px;
 }
 
+.gap-\[25px\] {
+  gap: 25px;
+}
+
 .bg-gray-700 {
   --tw-bg-opacity: 1;
   background-color: rgb(55 65 81 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#00000020\] {
+  background-color: #00000020;
+}
+
+.bg-\[\#00000010\] {
+  background-color: #00000010;
+}
+
+.bg-slate-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(100 116 139 / var(--tw-bg-opacity));
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-center {
+  background-position: center;
 }
 
 .object-contain {
@@ -736,8 +773,40 @@ video {
   padding-top: 0px;
 }
 
+.text-center {
+  text-align: center;
+}
+
+.text-\[1\.5rem\] {
+  font-size: 1.5rem;
+}
+
+.text-\[1\.75rem\] {
+  font-size: 1.75rem;
+}
+
+.text-\[2\.5rem\] {
+  font-size: 2.5rem;
+}
+
+.text-\[2rem\] {
+  font-size: 2rem;
+}
+
+.text-\[1\.125rem\] {
+  font-size: 1.125rem;
+}
+
 .font-semibold {
   font-weight: 600;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.uppercase {
+  text-transform: uppercase;
 }
 
 .text-\[\#fff\] {
@@ -760,6 +829,16 @@ video {
 
 .hover\:opacity-70:hover {
   opacity: 0.7;
+}
+
+@media (min-width: 640px) {
+  .sm\:text-\[2rem\] {
+    font-size: 2rem;
+  }
+
+  .sm\:text-\[1\.75rem\] {
+    font-size: 1.75rem;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -803,11 +882,11 @@ video {
     padding: 0px;
   }
 
-  .lg\:text-\[70px\] {
-    font-size: 70px;
-  }
-
   .lg\:text-\[120px\] {
     font-size: 120px;
+  }
+
+  .lg\:text-\[2\.5rem\] {
+    font-size: 2.5rem;
   }
 }

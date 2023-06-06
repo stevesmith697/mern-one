@@ -12,6 +12,8 @@
 
     --btn-color: #fff;
     --btn-text: #000;
+    --form-btn-bg: #a366ba;
+    --form-btn-text: #fff;
 }
 *{
     margin: 0;
@@ -63,6 +65,14 @@ section{
     padding: 60px 0;
 }
 
+button{
+    transition: .5s ease;
+}
+
+button:hover{
+    transform: scale(.95);
+}
+
 .read-more-btn{
     text-decoration: underline;
     cursor: pointer;
@@ -83,4 +93,29 @@ color: var(--btn-text);
 .btn-secondary{
 border:1px solid var(--btn-color);
 color: var(--btn-color) ;
+}
+
+input,textarea,select{
+    padding: 10px 20px;
+    border: none !important;
+    outline: none !important;
+    background-color: #fff;
+    color: #000;
+    line-height: 1;
+    font-size: 1rem;
+}
+
+.form-btn{
+    padding: 10px 20px;
+    background-color: var(--form-btn-bg);
+    color: var(--form-btn-text);
+    font-weight: 500;
+}
+
+svg{
+    transition: .3s ease;
+}
+
+svg:hover{
+    transform: scale(.95);
 }
