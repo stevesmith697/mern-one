@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --h1-font-size:56px;
+    --h2-font-size:42px;
+    --h3-font-size:38px;
+    --h4-font-size:24px;
+    --h5-font-size:18px;
+    --body-font-size:16px;
+
+    /* Colors */
+
+    --theme-primary: #a366ba;
+    --btn-color: #fff;
+    --btn-text: #000;
+    --form-btn-bg: #a366ba;
+    --form-btn-text: #fff;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container,.container-fluid{
+    padding: 0 15px;
+}
+
+ul li svg{
+    cursor: pointer;
+    transition: .3s ease;
+}
+ul li svg:hover{
+    transform: scale(1.2);
+}
+
+h1{
+   font-size: var(--h1-font-size);
+}
+h2{
+   font-size: var(--h2-font-size);
+}
+h3{
+   font-size: var(--h3-font-size);
+}
+h4{
+   font-size: var(--h4-font-size);
+}
+h5{
+   font-size: var(--h5-font-size);
+}
+body,p{
+   font-size: var(--body-font-size);
+}
+
+.gradient-1{
+background: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+}
+section{
+    padding: 60px 0;
+}
+
+button{
+    transition: .5s ease;
+}
+
+button:hover{
+    transform: scale(.95);
+}
+
+.read-more-btn{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.btn-primary, .btn-secondary{
+    padding: 10px 20px;
+    font-weight: 500;
+    line-height: 1;
+    transition: .3s ease;
+}
+
+.btn-primary{
+background-color: var(--btn-color);
+color: var(--btn-text);
+}
+
+.btn-secondary{
+border:1px solid var(--btn-color);
+color: var(--btn-color) ;
+}
+
+input,textarea,select{
+    padding: 10px 20px;
+    border: none !important;
+    outline: none !important;
+    background-color: #fff;
+    color: #000;
+    line-height: 1;
+    font-size: 1rem;
+}
+
+.form-btn{
+    padding: 10px 20px;
+    background-color: var(--form-btn-bg);
+    color: var(--form-btn-text);
+    font-weight: 500;
+}
+
+svg{
+    transition: .3s ease;
+}
+
+svg:hover{
+    transform: scale(.95);
+}
+
+.section-title{
+    width: fit-content;
+    position: relative;
+}
+
+.section-title:after{
+    background-color: var(--theme-primary);
+    height: 5px;
+    width: 100%;
+    content: '';
+    display: block;
+    margin-top: 5px;
+}
